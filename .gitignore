@@ -40,3 +40,37 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# compiled output
+/dist
+/tmp
+/out-tsc
+
+# IDEs and editors
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# misc
+/.angular/cache
+/.sass-cache
+/.nyc_output
+/coverage
+/.eslintcache
+
+# local env files
+*.local
+.env
+.env.*.local
