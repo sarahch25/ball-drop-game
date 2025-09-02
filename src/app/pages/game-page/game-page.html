@@ -1,0 +1,20 @@
+<section class="game-grid">
+  <div class="play-area">
+    <app-game-canvas
+      [responsive]="true"
+      [aspect]="16/9"
+      [movingHorizontally]="movingHorizontally"
+      [isDropping]="isDropping"
+      (landed)="onLanded($event)">
+    </app-game-canvas>
+  </div>
+
+  <div class="sidebar">
+    <app-score-display [score]="score" [lastDistance]="lastDistance"></app-score-display>
+    <app-game-controls
+      [canDrop]="movingHorizontally && !isDropping"
+      (drop)="onDrop()"
+      (reset)="onReset()">
+    </app-game-controls>
+  </div>
+</section>

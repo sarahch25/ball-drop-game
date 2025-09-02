@@ -1,0 +1,13 @@
+<div class="card">
+  <h3>Leaderboard</h3>
+  <div class="add">
+    <input placeholder="Your name" [(ngModel)]="name" />
+    <input #scoreInput placeholder="Score (manual demo)" />
+    <button (click)="save(scoreInput)">Save</button>
+  </div>
+  <ol>
+    <li *ngFor="let e of entries">
+      <strong>{{ e.name }}</strong> — {{ e.score }} <span class="muted">({{ e.date | date:'short' }})</span>
+    </li>
+  </ol>
+</div>

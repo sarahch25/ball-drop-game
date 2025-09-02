@@ -1,0 +1,7 @@
+.app-header {
+  background: linear-gradient(135deg, #e63073, #3730a3);
+  color: #fff; padding: 12px 20px;
+  a { color:#fff; margin-right:16px; text-decoration:none; }
+  .active { text-decoration: underline; }
+}
+.app-main { min-height: calc(100dvh - 56px); padding: 20px; background:#0f172a; }

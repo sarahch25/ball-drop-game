@@ -1,0 +1,7 @@
+.controls { display:flex; gap: 10px; }
+.btn {
+  padding: 10px 14px; border-radius: 10px; border: none; cursor: pointer;
+  &.primary { background:#22c55e; color:#08141f; }
+  &.ghost { background: transparent; color:#e2e8f0; outline:1px solid #64748b; }
+  &:disabled { opacity: .5; cursor: not-allowed; }
+}

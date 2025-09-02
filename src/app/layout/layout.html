@@ -1,0 +1,12 @@
+<header class="app-header">
+  <h1>Drop the ball</h1>
+
+  <nav>
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Game</a>
+    <a routerLink="/leaderboard" routerLinkActive="active">Leaderboard</a>
+  </nav>
+</header>
+
+<main class="app-main" dir="rtl">
+  <router-outlet></router-outlet>
+</main>

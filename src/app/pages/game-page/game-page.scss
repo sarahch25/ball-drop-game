@@ -1,0 +1,25 @@
+.game-grid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 16px;
+}
+
+.play-area {
+  width: 100%;
+  max-width: 1000px;
+  margin-inline: auto;   /* מרכז את המשחק */
+  padding: 8px;         /* מונע חישוב רוחב=0 במקרים מסוימים */
+  box-sizing: border-box;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* מובייל/טאבלט */
+@media (max-width: 900px) {
+  .game-grid { grid-template-columns: 1fr; }
+  .sidebar { order: -1; } /* אופציונלי: תצוגת ניקוד/כפתורים מעל המשחק */
+}

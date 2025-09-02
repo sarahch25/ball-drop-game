@@ -1,0 +1,12 @@
+.card 
+{ 
+    background:#0b1220;
+     color:#e2e8f0; 
+     padding:16px; 
+     border-radius:12px; 
+     text-align: right
+}
+.add { display:flex; gap:8px; margin-bottom:10px; }
+input { background:#111827; color:#e5e7eb; border:1px solid #374151; border-radius:8px; padding:8px; }
+button { padding:8px 12px; border-radius:8px; border:0; background:#22c55e; color:#08141f; }
+.muted { color:#94a3b8; font-size:12px; }
